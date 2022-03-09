@@ -1,13 +1,19 @@
 /* ১. setTimeout এর ভিতরে একটা কিছু কনসোল লগ করবে যেটা সাড়ে তিন সেকেন্ড পরে আউটপুট দেখাবে। */
-const data = "Hello, I'll will be displayed after 3.5s"
+const data = "Hello, I displayed after 3.5s has been passed"
 const greetings = () => {
     console.log(data)
 }
 setTimeout(greetings, 3500) // 1st para- a function but not invoked directly using () and 2nd para - time after the function will exicute
 
-/* ২. prompt দিয়ে ইউজারের কাছ থেকে একটা সংখ্যা নাও। সেটার সাথে ২০০যোগ করো। যোগ করতে গেলে parse করা লাগলে সেটা করো। তারপর সেই রেজাল্টকে alert দিয়ে আউটপুট দেখাও */ 
+/* ২. prompt দিয়ে ইউজারের কাছ থেকে একটা সংখ্যা নাও। সেটার সাথে ২০০যোগ করো। যোগ করতে গেলে parse করা লাগলে সেটা করো। তারপর সেই রেজাল্টকে alert দিয়ে আউটপুট দেখাও */
+// const input = prompt('Input a number')
+// alert(`Total sum is ~ ${parseFloat(input) + 200}`)
 
 /* ৩. ব্রাউজারে একটা confirm করে জিজ্ঞেস করো তুমি কি তোমার ওয়েবসাইট এর লোকেশন দেখতে চাও। যদি বলে দেখতে চাই তাহলে সেই ওয়েবসাইট এর লোকেশন এর href জিনিসটা কনসোল লগ করে দেখাও  */
+const question = confirm('Do You want see the location of the website?')
+if (question) {
+    console.log(location.href)
+}
 
 /* ৪. Cookies কি জিনিস। এইটা দিয়ে কি করা হয়। সেটা ইংরেজিতে ৫ থেকে ৭ লাইনের মধ্যে লিখে ফেলো। */ 
 
